@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    <com.demo.videodemo.MyTabLayout-->
+<!--        android:id="@+id/tab"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tl:tl_indicator_color="#ff00ff"-->
+<!--        tl:tl_indicator_gravity=""-->
+<!--        tl:tl_indicator_height="3dp"-->
+<!--        tl:tl_indicator_width="5dp"-->
+<!--        tl:tl_textUnselectColor="#000000" />-->
+
+    <com.demo.tab.MyTabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#FFFFFF"
+        tl:tl_indicator_color="@color/appThemeRed"
+        tl:tl_indicator_height="3dp"
+        tl:tl_indicator_width="18dp"
+        tl:tl_textSelectColor="@color/appThemeRed"
+        tl:tl_textUnselectColor="#000000"
+        tl:tl_textsize="14sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <Button
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
